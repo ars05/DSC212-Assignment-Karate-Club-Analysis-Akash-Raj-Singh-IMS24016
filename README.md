@@ -38,10 +38,10 @@ The **modularity** \( Q \) measures how well a network is partitioned into commu
 $$\mathbf{Q} = \frac{1}{2m}\sum_{i,j} \left(A_{ij} - \frac{k_i k_j}{2m}\right)\delta(c_i, c_j)$$
 
 where:
-- \( A_{ij} \) = adjacency matrix entries  
-- \( k_i \) = degree of node \( i \)  
-- \( m \) = number of edges  
-- \( \delta(c_i, c_j) = 1 \) if nodes \( i \) and \( j \) are in the same community, else 0  
+- $A_{ij}$ = adjacency matrix entries  
+- $k_i$ = degree of node $i$ 
+- $m$ = number of edges  
+- $delta(c_i, c_j) = 1$ if nodes $i$ and $j$ are in the same community, else 0  
 
 ### Spectral Bisection Rule
 For a community \( C \), compute the **restricted modularity matrix** \( \mathbf{B}^{(C)} \) and its largest eigenpair:
