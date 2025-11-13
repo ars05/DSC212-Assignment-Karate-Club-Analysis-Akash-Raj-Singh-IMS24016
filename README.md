@@ -35,9 +35,9 @@ The goal of this assignment is to:
 ### Modularity
 The **modularity** \( Q \) measures how well a network is partitioned into communities:
 
-\[
-Q = \frac{1}{2m} \sum_{i,j} \Big(A_{ij} - \frac{k_i k_j}{2m}\Big)\, \delta(c_i, c_j)
-\]
+$$
+  Q \;=\; \frac{1}{2m}\sum_{i,j} \Bigl(A_{ij} - \frac{k_i k_j}{2m}\Bigr)\,\delta(c_i, c_j),
+  $$
 
 where:
 - \( A_{ij} \) = adjacency matrix entries  
