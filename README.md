@@ -1,12 +1,12 @@
-# 🧠 DSC212 Assignment — Spectral Modularity on the Karate Club Graph
+# DSC212 Assignment — Spectral Modularity on the Karate Club Graph
 
-### 🎓 Course: Data Science (DSC212)  
-### 📅 Assignment: Modularity & Community Detection  
-### 👤 Author: *Akash Raj Singh*  
+###  Course: Data Science (DSC212)  
+###  Assignment: Modularity & Community Detection  
+###  Author: *Akash Raj Singh*  
 
 ---
 
-## 📘 Overview
+##  Overview
 
 This repository contains the complete Google Colab / Jupyter Notebook solution for the **DSC212 Modularity Assignment**.  
 It implements **recursive spectral modularity bisection** on the classic **Zachary’s Karate Club** graph and visualizes community evolution and node metrics.
@@ -108,6 +108,6 @@ Each node is plotted with consistent coloring across all graphs.
 - Although effective for small networks, **dense eigendecomposition** is computationally heavy for large networks — use sparse solvers for scalability.
 
 ---
-##  Licence
+##  License
 This project is for academic use and submission only. Redistribution or publication without permission is prohibited. The project will be accesible until 04th January 2026.
 
