@@ -34,6 +34,7 @@ The goal of this assignment is to:
 
 ### Modularity
 The **modularity** \( Q \) measures how well a network is partitioned into communities:
+
 $$\mathbf{Q} = \frac{1}{2m}\sum_{i,j} \left(A_{ij} - \frac{k_i k_j}{2m}\right)\delta(c_i, c_j)$$
 
 where:
@@ -45,9 +46,7 @@ where:
 ### Spectral Bisection Rule
 For a community \( C \), compute the **restricted modularity matrix** \( \mathbf{B}^{(C)} \) and its largest eigenpair:
 
-\[
-\mathbf{B}^{(C)} \mathbf{v}_1^{(C)} = \lambda_1^{(C)} \mathbf{v}_1^{(C)}
-\]
+$$\mathbf{B}^{(C)} \mathbf{v}_1^{(C)} = \lambda_1^{(C)} \mathbf{v}_1^{(C)}$$
 
 - If \( \lambda_1^{(C)} > 0 \), split the community based on the **sign of the eigenvector** entries.  
 - If \( \lambda_1^{(C)} \le 0 \), the community is **indivisible** and recursion stops.
