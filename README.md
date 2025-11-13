@@ -41,7 +41,7 @@ where:
 - $A_{ij}$ = adjacency matrix entries  
 - $k_i$ = degree of node $i$ 
 - $m$ = number of edges  
-- $delta(c_i, c_j) = 1$ if nodes $i$ and $j$ are in the same community, else 0  
+- $\delta(c_i, c_j) = 1$ if nodes $i$ and $j$ are in the same community, else 0  
 
 ### Spectral Bisection Rule
 For a community \( C \), compute the **restricted modularity matrix** $\mathbf{B}^{(C)}$ and its largest eigenpair:
@@ -57,12 +57,10 @@ $$\mathbf{B}^{(C)} \mathbf{v}_1^{(C)} = \lambda_1^{(C)} \mathbf{v}_1^{(C)}$$
 
 The notebook performs the following:
 
-1. **Constructs the modularity matrix**
-   \[
-   \mathbf{B} = \mathbf{A} - \frac{\mathbf{k}\mathbf{k}^\top}{2m}
-   \]
+1. **Constructs the modularity matrix**<br>
+   $$\mathbf{B} = \mathbf{A} - \frac{\mathbf{k}\mathbf{k}^\top}{2m}$$
 2. **Recursively bisects** the graph based on the sign of the leading eigenvector.
-3. **Applies a stopping rule** using the leading eigenvalue (\( \lambda_1 \le 0 \)).
+3. **Applies a stopping rule** using the leading eigenvalue $\lambda_1^{(C)} \le 0$.
 4. **Visualizes** the network after each split using a fixed layout.
 5. **Computes node metrics** (degree, betweenness, closeness, clustering) after every iteration.
 6. **Plots metric evolution** to show structural role changes during community formation.
