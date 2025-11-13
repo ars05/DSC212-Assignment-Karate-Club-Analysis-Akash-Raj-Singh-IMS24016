@@ -44,12 +44,12 @@ where:
 - $delta(c_i, c_j) = 1$ if nodes $i$ and $j$ are in the same community, else 0  
 
 ### Spectral Bisection Rule
-For a community \( C \), compute the **restricted modularity matrix** \( \mathbf{B}^{(C)} \) and its largest eigenpair:
+For a community \( C \), compute the **restricted modularity matrix** $mathbf{B}^{(C)}$ and its largest eigenpair:
 
 $$\mathbf{B}^{(C)} \mathbf{v}_1^{(C)} = \lambda_1^{(C)} \mathbf{v}_1^{(C)}$$
 
-- If \( \lambda_1^{(C)} > 0 \), split the community based on the **sign of the eigenvector** entries.  
-- If \( \lambda_1^{(C)} \le 0 \), the community is **indivisible** and recursion stops.
+- If $lambda_1^{(C)} > 0$, split the community based on the **sign of the eigenvector** entries.  
+- If $lambda_1^{(C)} \le 0$, the community is **indivisible** and recursion stops.
 
 ---
 
