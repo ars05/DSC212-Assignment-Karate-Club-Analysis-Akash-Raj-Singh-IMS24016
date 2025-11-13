@@ -108,6 +108,28 @@ Each node is plotted with consistent coloring across all graphs.
 - Although effective for small networks, **dense eigendecomposition** is computationally heavy for large networks — use sparse solvers for scalability.
 
 ---
+
+##  Requirements
+
+- Python 3.7+
+- `networkx`
+- `numpy`
+- `matplotlib`
+
+Install dependencies:
+```bash
+pip install networkx numpy matplotlib
+````
+
+##  Background
+
+This project is based on:
+
+* M.E.J. Newman’s spectral methods for community detection
+* Zachary’s Karate Club dataset (a benchmark for social network analysis)
+
+---
+
 ##  License
 This project is for academic use and submission only. Redistribution or publication without permission is prohibited. The project will be accesible until 04th January 2026.
 
