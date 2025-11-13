@@ -1,9 +1,8 @@
 # 🧠 DSC212 Assignment — Spectral Modularity on the Karate Club Graph
 
-### 🎓 Course: Data Science Concepts (DSC212)  
+### 🎓 Course: Data Science (DSC212)  
 ### 📅 Assignment: Modularity & Community Detection  
-### 👤 Author: *[Your Name]*  
-### 🏫 Institution: *[Your University]*  
+### 👤 Author: *Akash Raj Singh*  
 
 ---
 
@@ -14,7 +13,7 @@ It implements **recursive spectral modularity bisection** on the classic **Zacha
 
 ---
 
-## 🧩 Problem Statement
+##  Problem Statement
 
 The goal of this assignment is to:
 1. Implement the **spectral modularity optimization** method using recursive bisection.
@@ -31,7 +30,7 @@ The goal of this assignment is to:
 
 ---
 
-## 🧮 Theoretical Background
+##  Theoretical Background
 
 ### Modularity
 The **modularity** \( Q \) measures how well a network is partitioned into communities:
@@ -58,7 +57,7 @@ For a community \( C \), compute the **restricted modularity matrix** \( \mathbf
 
 ---
 
-## 🧠 Methodology
+##  Methodology
 
 The notebook performs the following:
 
@@ -75,7 +74,7 @@ The notebook performs the following:
 
 ---
 
-## 📊 Visualizations
+##  Visualizations
 
 The notebook automatically produces:
 - Graph snapshots at every recursive split.  
@@ -90,7 +89,7 @@ Each node is plotted with consistent coloring across all graphs.
 
 ---
 
-## 📈 Results Summary
+##  Results Summary
 
 - Successfully detected **4 major communities** in the Karate Club graph.  
 - The **modularity value \( Q \)** achieved reflects meaningful structure separation.  
@@ -101,7 +100,7 @@ Each node is plotted with consistent coloring across all graphs.
 
 ---
 
-## 💬 Discussion & Insights
+##  Discussion & Insights
 
 - Spectral modularity provides **interpretable** community divisions using only eigenstructure.
 - Recursive bisection uncovers hierarchical structure naturally.
@@ -109,17 +108,6 @@ Each node is plotted with consistent coloring across all graphs.
 - Although effective for small networks, **dense eigendecomposition** is computationally heavy for large networks — use sparse solvers for scalability.
 
 ---
+##  Licence
+This project is for academic use and submission only. Redistribution or publication without permission is prohibited. The project will be accesible until 04th January 2026.
 
-## 🚀 How to Run
-
-### Option 1 — Google Colab
-1. Open the `.ipynb` notebook in **Google Colab**.  
-2. Make sure to **enable plotting outputs** (`Runtime → Run all`).  
-3. All graphs and plots will render inline.
-
-### Option 2 — Local Jupyter Notebook
-```bash
-git clone https://github.com/<your-username>/DSC212-Modularity-KarateClub.git
-cd DSC212-Modularity-KarateClub
-pip install -r requirements.txt
-jupyter notebook
